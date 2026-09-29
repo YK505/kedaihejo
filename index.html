@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kedai Teras Hejo | Nongkrong Santai di Duren Sawit</title>
+  <meta name="description" content="Kedai Teras Hejo, tempat nongkrong santai dengan menu beragam dan harga terjangkau di Duren Sawit, Jakarta Timur.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { cream: '#FBF7EE' },
+          fontFamily: { sans: ['Poppins', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-cream text-gray-800 font-sans">
+
+  <header class="fixed top-0 inset-x-0 z-40 bg-cream/90 backdrop-blur border-b border-emerald-100">
+    <nav class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      <a href="#beranda" class="text-xl font-bold text-emerald-700">Kedai Teras Hejo</a>
+
+      <ul class="hidden md:flex gap-8 text-sm font-medium">
+        <li><a href="#beranda" class="hover:text-emerald-600">Beranda</a></li>
+        <li><a href="#tentang" class="hover:text-emerald-600">Tentang Kami</a></li>
+        <li><a href="#menu" class="hover:text-emerald-600">Menu</a></li>
+        <li><a href="#galeri" class="hover:text-emerald-600">Galeri</a></li>
+        <li><a href="#lokasi" class="hover:text-emerald-600">Lokasi</a></li>
+      </ul>
+
+      <div class="flex items-center gap-3">
+        <a href="#" data-wa class="bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold px-4 py-2 rounded-full">Pesan WA</a>
+        <button id="menuBtn" class="md:hidden p-2" aria-label="Buka menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+
+    <ul id="mobileMenu" class="hidden md:hidden bg-cream border-t border-emerald-100 px-4 py-3 space-y-3 text-sm font-medium">
+      <li><a href="#beranda" class="block">Beranda</a></li>
+      <li><a href="#tentang" class="block">Tentang Kami</a></li>
+      <li><a href="#menu" class="block">Menu</a></li>
+      <li><a href="#galeri" class="block">Galeri</a></li>
+      <li><a href="#lokasi" class="block">Lokasi</a></li>
+    </ul>
+  </header>
+
+  <section id="beranda" class="hero relative min-h-screen flex items-center pt-16">
+    <div class="max-w-6xl mx-auto px-4 text-white">
+      <p class="uppercase tracking-widest text-sm text-emerald-200 mb-3">Duren Sawit, Jakarta Timur</p>
+      <h1 class="text-4xl md:text-6xl font-bold leading-tight max-w-2xl">Nongkrong santai di teras yang adem dan hijau</h1>
+      <p class="mt-5 text-lg text-emerald-50 max-w-xl">Kopi, makanan, dan camilan enak dengan harga bersahabat. Cocok buat ngobrol bareng teman, keluarga, atau ngerjain tugas.</p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#menu" class="bg-emerald-500 hover:bg-emerald-600 px-6 py-3 rounded-full font-semibold">Lihat Menu</a>
+        <a href="#" data-wa class="bg-white/90 hover:bg-white text-emerald-800 px-6 py-3 rounded-full font-semibold">Hubungi Kami</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="tentang" class="py-20">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+      <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" alt="Suasana Kedai Teras Hejo" class="rounded-3xl shadow-lg w-full h-80 object-cover" loading="lazy">
+      <div>
+        <h2 class="text-3xl font-bold text-emerald-800">Tentang Kami</h2>
+        <p class="mt-4 text-gray-600 leading-relaxed">Kedai Teras Hejo hadir di Komp. IKIP, Duren Sawit, sebagai tempat singgah yang nyaman buat siapa saja. Dengan suasana teras yang asri, kami menyajikan menu makanan dan minuman yang enak tanpa bikin kantong bolong.</p>
+        <div class="mt-6 grid sm:grid-cols-3 gap-4">
+          <div class="bg-white rounded-2xl p-4 shadow-sm">
+            <div class="text-2xl">🌿</div>
+            <h3 class="font-semibold mt-2">Tempat Nyaman</h3>
+            <p class="text-sm text-gray-500 mt-1">Teras adem, cocok buat santai lama.</p>
+          </div>
+          <div class="bg-white rounded-2xl p-4 shadow-sm">
+            <div class="text-2xl">💸</div>
+            <h3 class="font-semibold mt-2">Harga Terjangkau</h3>
+            <p class="text-sm text-gray-500 mt-1">Ramah buat mahasiswa dan keluarga.</p>
+          </div>
+          <div class="bg-white rounded-2xl p-4 shadow-sm">
+            <div class="text-2xl">🍽️</div>
+            <h3 class="font-semibold mt-2">Menu Beragam</h3>
+            <p class="text-sm text-gray-500 mt-1">Dari nasi sampai kopi dan camilan.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" class="py-20 bg-emerald-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-emerald-800 text-center">Menu Kami</h2>
+      <p class="text-center text-gray-600 mt-2">Pilih menu favoritmu, lalu pesan langsung lewat WhatsApp.</p>
+
+      <div id="filters" class="flex flex-wrap justify-center gap-2 mt-8">
+        <button data-cat="Semua" class="filter-btn active">Semua</button>
+        <button data-cat="Makanan" class="filter-btn">Makanan</button>
+        <button data-cat="Minuman" class="filter-btn">Minuman</button>
+        <button data-cat="Makanan Ringan" class="filter-btn">Makanan Ringan</button>
+      </div>
+
+      <div id="menuGrid" class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </div>
+  </section>
+
+  <section id="galeri" class="py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-emerald-800 text-center">Galeri</h2>
+      <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-3">
+        <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=800&q=80" alt="Suasana kafe" class="gallery-img md:col-span-2 md:row-span-2" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=500&q=80" alt="Kopi" class="gallery-img" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=500&q=80" alt="Makanan" class="gallery-img" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=500&q=80" alt="Minuman" class="gallery-img" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=500&q=80" alt="Hidangan" class="gallery-img" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Interior kedai" class="gallery-img md:col-span-2" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section id="lokasi" class="py-20 bg-emerald-50">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10">
+      <div>
+        <h2 class="text-3xl font-bold text-emerald-800">Lokasi & Operasional</h2>
+        <div class="mt-6 space-y-5">
+          <div>
+            <h3 class="font-semibold">Alamat</h3>
+            <p class="text-gray-600">Komp. IKIP, Jl. Pendidikan Raya 2 No. H 107, Duren Sawit, Jakarta Timur</p>
+          </div>
+          <div>
+            <h3 class="font-semibold">Jam Operasional</h3>
+            <p class="text-gray-600">Senin - Minggu, 10.00 - 22.00 WIB</p>
+          </div>
+          <div>
+            <h3 class="font-semibold">Instagram</h3>
+            <a href="https://instagram.com/kedaiterashejo" target="_blank" rel="noopener" class="text-emerald-700 hover:underline">@kedaiterashejo</a>
+          </div>
+        </div>
+      </div>
+      <div class="rounded-3xl overflow-hidden shadow-lg h-80 md:h-full min-h-[320px]">
+        <iframe src="https://www.google.com/maps?q=Kedai+Teras+Hejo&ll=-6.2322526,106.920214&z=17&output=embed" class="w-full h-full border-0" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" title="Peta Kedai Teras Hejo"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-6 text-center text-sm text-gray-500">
+    &copy; <span id="year"></span> Kedai Teras Hejo. Duren Sawit, Jakarta Timur.
+  </footer>
+
+  <a href="#" data-wa aria-label="Chat WhatsApp" class="fixed bottom-5 right-5 z-50 bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full shadow-xl flex items-center justify-center">
+    <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11.9 11.9 0 0 0 12 0C5.4 0 .1 5.3.1 11.9c0 2.1.5 4.1 1.6 5.9L0 24l6.4-1.7a12 12 0 0 0 5.6 1.4c6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.4-8.3zM12 21.7c-1.8 0-3.6-.5-5.1-1.4l-.4-.2-3.800 1 1-3.700-.2-.4a9.800 9.800 0 0 1-1.500-5.200c0-5.400 4.400-9.800 9.900-9.800 2.600 0 5.100 1 6.900 2.900a9.700 9.700 0 0 1 2.900 6.900c0 5.400-4.500 9.900-9.900 9.900zm5.400-7.400c-.3-.1-1.800-.9-2-1s-.5-.1-.7.1-.8 1-1 1.200-.4.200-.7.100a8 8 0 0 1-4-3.500c-.3-.5.300-.5.900-1.600.1-.2 0-.4 0-.5l-.9-2.200c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.100-.8.400s-1 1-1 2.500 1.100 2.900 1.200 3.100 2.100 3.300 5.200 4.600c1.900.8 2.700.9 3.600.8.600-.1 1.800-.7 2-1.400.3-.7.300-1.300.2-1.400s-.3-.2-.6-.3z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
